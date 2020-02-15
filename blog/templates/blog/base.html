@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+        <title>Tinkergram</title>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Tinkergram</a></h1>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        
+        <p>Minato Hmasaka!</p>
+        <p>Atsushi Shimizu!</p>
+        <p>Naoshi Nomoto!</p>
+        <p>Tateyama Kakeru!</p>
+        <p>Omae Ryousuke!</p>
+        <p>Mastunaga Syouto!</p>
+    </body>
+</html>
